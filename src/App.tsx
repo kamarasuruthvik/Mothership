@@ -1,4 +1,5 @@
 import ButtonGroup from "./components/ButtonGroup/ButtonGroup.tsx";
+import profileImage from "./assets/profile.jpg"
 function App() {
   const extras =[{
   "btnLink":"https://www.instagram.com/5_ruthvik_5/",
@@ -26,7 +27,7 @@ function App() {
   return (
     <>
     <div className="container">
-      <img src="./src/assets/profile.jpg" />
+      <img src={profileImage} alt={"profile image"}/>
       <h2>Ruthvik Kamarasu</h2>
       <p><span>Hey There <span className="animate-shake hi">👋</span> !</span> I'm 6'6 dev who is figuring out life. <span>🎓 IIIT-BBSR'22 | ⚙️ Gupshup</span></p>
       <ButtonGroup ButtonList={primary}/>
