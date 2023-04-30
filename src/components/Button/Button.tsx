@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Button.module.scss";
-
-interface ButtonProps{
-  btnClassName?: string;
-  icon?: string;
-  btnLabel?: string;
-  btnLink?: string;
-}
-
+import { ButtonProps } from "./button.types";
 
 const Button: React.FC<ButtonProps> = ({
   btnClassName,
