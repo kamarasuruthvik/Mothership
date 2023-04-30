@@ -1,4 +1,4 @@
-export type ButtonProps ={
+export type ButtonProps = {
   btnClassName?: string;
   icon?: string;
   btnLabel?: string;

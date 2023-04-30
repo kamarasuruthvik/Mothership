@@ -1,6 +1,4 @@
-import Button from "./components/Button/Button.tsx";
 import ButtonGroup from "./components/ButtonGroup/ButtonGroup.tsx";
-
 function App() {
   const extras =[{
   "btnLink":"https://www.instagram.com/5_ruthvik_5/",

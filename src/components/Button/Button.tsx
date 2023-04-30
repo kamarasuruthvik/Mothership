@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Button.module.scss";
-import { ButtonProps } from "./button.types";
+import { ButtonProps } from "./Button.types";
 
 const Button: React.FC<ButtonProps> = ({
-  btnClassName,
+  btnClassName="medium",
   btnLink,
   icon,
   btnLabel
 }) => {
   return(
-    <button className={`${styles.btn}`}>
+    <button className={btnClassName ? `${styles.btn}`: `${styles.btn} ${styles[btnClassName]}`}>
       <a href={btnLink || "#"}>
         {btnLabel}
         {icon && <img src={icon}/>}
