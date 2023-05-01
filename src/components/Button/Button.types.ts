@@ -3,4 +3,5 @@ export type ButtonProps = {
   icon?: string;
   btnLabel?: string;
   btnLink?: string;
+  target?: string;
 }

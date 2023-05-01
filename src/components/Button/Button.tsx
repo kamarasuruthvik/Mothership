@@ -6,11 +6,12 @@ const Button: React.FC<ButtonProps> = ({
   btnClassName="medium",
   btnLink,
   icon,
-  btnLabel
+  btnLabel,
+  target="_blank"
 }) => {
   return(
     <button className={btnClassName ? `${styles.btn}`: `${styles.btn} ${styles[btnClassName]}`}>
-      <a href={btnLink || "#"}>
+      <a href={btnLink || "#"} target={target!=="_blank" ? target : "_blank"}>
         {btnLabel}
         {icon && <img src={icon}/>}
       </a>
